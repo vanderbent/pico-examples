@@ -2,6 +2,7 @@
  * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
  *
  * SPDX-License-Identifier: BSD-3-Clause
+ * x
  */
 
 #include "pico/stdlib.h"
@@ -15,7 +16,7 @@ int main() {
     gpio_set_dir(LED_PIN, GPIO_OUT);
     while (true) {
         gpio_put(LED_PIN, 1);
-        sleep_ms(250);
+        sleep_ms(350);
         gpio_put(LED_PIN, 0);
         sleep_ms(250);
     }
